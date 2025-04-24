@@ -32,3 +32,5 @@ Make sure Python 3.7+ is installed, then install pygame:
 pip install pygame
 
 ---
+
+## 🎮 Controls & Shortcuts
