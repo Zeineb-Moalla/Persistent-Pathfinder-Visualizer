@@ -30,3 +30,11 @@ Make sure Python 3.7+ is installed, then install pygame:
 
 ```bash
 pip install pygame
+
+Color | Meaning
+🟩 Green | Start point
+🟦 Blue | Destination point
+⬜ Gray | Walkable cell
+⬛ Black | Wall or obstacle
+🟥 Red | Final shortest path
+🟦 Cyan | Visited node
