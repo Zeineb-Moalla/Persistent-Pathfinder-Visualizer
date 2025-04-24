@@ -49,14 +49,13 @@ pip install pygame
 
 ## 🎨 What the Colors Mean
 
-| Color      | Meaning            |
-|------------|--------------------|
-| Green      | Start point        |
-| Blue       | Destination point  |
-| Gray       | Walkable cell      |
-| Black      | Wall or obstacle   |
-| Red        | Final shortest path|
-| Cyan       | Visited node       |
+Color | Meaning
+Green | Start point
+Blue | Destination point
+Gray | Walkable cell
+Black | Wall or obstacle
+Red | Final shortest path
+Cyan | Visited node
 
 ---
 
