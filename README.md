@@ -23,6 +23,19 @@ As part of a graduate-level course on advanced data structures, I wanted to impl
 
 ---
 
+## 🎮 Controls & Shortcuts
+
+Action	What to Do
+Place Start Point	Left-click (1st click)
+Place End Point	Left-click (2nd click)
+Draw Obstacles	Left-click + drag
+Run Pathfinding	Press Enter
+Undo Last Action	Press Z
+Redo	Press Y
+Restart App	Press Backspace
+
+---
+
 ## 🖥️ How to Run It
 
 ### 1. Install Python and `pygame`
