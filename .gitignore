@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Log files
+*.log
+
+# Media files (just in case)
+*.mp4
+*.mov
+*.avi
+
+# VS Code settings
+.vscode/
+
+# Jupyter notebook checkpoints (if ever used)
+.ipynb_checkpoints/
