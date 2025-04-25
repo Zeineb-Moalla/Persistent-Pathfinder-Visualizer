@@ -3,7 +3,7 @@
 
 This project is a Python-based visual tool for exploring Dijkstra’s algorithm on a 2D grid. I created it as a way to better understand pathfinding algorithms in real-time, and to incorporate ideas like versioning and UI interaction using `pygame`.
 
-You can place start/end points, draw obstacles, and visualize the shortest path — with support for undo/redo actions at every stage. It’s an interactive way to see how graph traversal algorithms work under the hood.
+You can place start/end points, draw obstacles, and visualize the shortest path; with support for undo/redo actions at every stage. It’s an interactive way to see how graph traversal algorithms work under the hood.
 
 ---
 
@@ -13,7 +13,7 @@ You can place start/end points, draw obstacles, and visualize the shortest path 
 - Real-time pathfinding using **Dijkstra's algorithm**
 - Fully functional **undo/redo** mechanism for all user actions
 - Clear visual feedback with color-coded tiles
-- Simple UI using `pygame` — no external frameworks needed
+- Simple UI using `pygame` —> no external frameworks needed
 
 ---
 
@@ -23,6 +23,27 @@ As part of a graduate-level course on advanced data structures, I wanted to impl
 
 ---
 
+<<<<<<< HEAD
+=======
+## 🖥️ How to Run It
+
+### 1. Install Python and `pygame`
+
+Make sure Python 3.7+ is installed, then install pygame:
+
+```bash
+pip install pygame
+```
+
+### 2. Run the app
+
+```bash
+python main.py
+```
+
+---
+
+>>>>>>> 5cdcc59 (Update README with final structure, controls, and algorithm details)
 ## 🎮 Controls & Shortcuts
 
 Action	What to Do
@@ -36,7 +57,24 @@ Restart App	Press Backspace
 
 ---
 
+<<<<<<< HEAD
 ## 🖥️ How to Run It
+=======
+## 🎨 What the Colors Mean
+
+| Color      | Meaning            |
+|------------|--------------------|
+|🟩 Green   | Start point        |
+|🟦Blue     | Destination point  |
+|⬜ Gray    | Walkable cell      |
+|⬛  Black  | Wall or obstacle   |
+|🟥 Red     | Final shortest path|
+|🟦 Cyan    | Visited node       |
+
+---
+
+## 🧠 Algorithm Used
+>>>>>>> 5cdcc59 (Update README with final structure, controls, and algorithm details)
 
 ### 1. Install Python and `pygame`
 Make sure Python 3.7+ is installed, then install pygame:
@@ -44,3 +82,27 @@ Make sure Python 3.7+ is installed, then install pygame:
 ```bash
 pip install pygame
 
+<<<<<<< HEAD
+=======
+On top of that, the app supports **persistent undo/redo** by saving a full snapshot of the grid after every meaningful change (start, destination, obstacle, or path). This is implemented in the `VersionManager.py` class.
+
+---
+## Project Structure
+
+```text
+.
+├── main.py             # Main loop and pygame interface
+├── maze.py             # Dijkstra's implementation + graph logic
+├── priorityqueue.py    # Custom min-heap priority queue
+├── VersionManager.py   # Undo/redo system with version snapshots
+├── README.md           # You're reading it!
+├── .gitignore          # Files to ignore when pushing to GitHub
+└── requirements.txt    # (Optional) pygame dependency
+```
+
+---
+
+ ## 💬 Final Thoughts
+
+ I built this tool to help myself (and others) better understand pathfinding and persistence. It could definitely be extended; for example, to support A* search, weighted cells, or even real-time multiplayer editing. But as it stands, I’m proud of it as a functional and educational demo app.
+>>>>>>> 5cdcc59 (Update README with final structure, controls, and algorithm details)
