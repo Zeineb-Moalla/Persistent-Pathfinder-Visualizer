@@ -23,8 +23,6 @@ As part of a graduate-level course on advanced data structures, I wanted to impl
 
 ---
 
-<<<<<<< HEAD
-=======
 ## 🖥️ How to Run It
 
 ### 1. Install Python and `pygame`
@@ -43,50 +41,43 @@ python main.py
 
 ---
 
->>>>>>> 5cdcc59 (Update README with final structure, controls, and algorithm details)
 ## 🎮 Controls & Shortcuts
 
-Action	What to Do
-Place Start Point	Left-click (1st click)
-Place End Point	Left-click (2nd click)
-Draw Obstacles	Left-click + drag
-Run Pathfinding	Press Enter
-Undo Last Action	Press Z
-Redo	Press Y
-Restart App	Press Backspace
+Action | What to Do
+Place Start Point | Left-click (1st click)
+Place End Point | Left-click (2nd click)
+Draw Obstacles | Left-click + drag
+Run Pathfinding | Press Enter
+Undo Last Action | Press Z
+Redo | Press Y
+Restart App | Press Backspace
 
 ---
 
-<<<<<<< HEAD
-## 🖥️ How to Run It
-=======
 ## 🎨 What the Colors Mean
 
 | Color      | Meaning            |
 |------------|--------------------|
-|🟩 Green   | Start point        |
-|🟦Blue     | Destination point  |
-|⬜ Gray    | Walkable cell      |
-|⬛  Black  | Wall or obstacle   |
-|🟥 Red     | Final shortest path|
-|🟦 Cyan    | Visited node       |
+|🟩Green      | Start point        |
+|🟦 Blue       | Destination point  |
+|⬜ Gray       | Walkable cell      |
+|⬛Black      | Wall or obstacle   |
+|🟥Red        | Final shortest path|
+|🟦 Cyan       | Visited node       |
+
 
 ---
 
 ## 🧠 Algorithm Used
->>>>>>> 5cdcc59 (Update README with final structure, controls, and algorithm details)
 
-### 1. Install Python and `pygame`
-Make sure Python 3.7+ is installed, then install pygame:
+The core of the application is built around **Dijkstra’s algorithm**, a classical shortest path algorithm that guarantees an optimal path in graphs with non-negative weights.
 
-```bash
-pip install pygame
+Each cell in the grid is treated as a node. If the cell is not an obstacle, it's connected to its neighbors (up/down/left/right) with uniform weight = 1. The algorithm uses a custom **priority queue (min-heap)** to always expand the cheapest unexplored node.
 
-<<<<<<< HEAD
-=======
 On top of that, the app supports **persistent undo/redo** by saving a full snapshot of the grid after every meaningful change (start, destination, obstacle, or path). This is implemented in the `VersionManager.py` class.
 
 ---
+
 ## Project Structure
 
 ```text
@@ -105,4 +96,3 @@ On top of that, the app supports **persistent undo/redo** by saving a full snaps
  ## 💬 Final Thoughts
 
  I built this tool to help myself (and others) better understand pathfinding and persistence. It could definitely be extended; for example, to support A* search, weighted cells, or even real-time multiplayer editing. But as it stands, I’m proud of it as a functional and educational demo app.
->>>>>>> 5cdcc59 (Update README with final structure, controls, and algorithm details)
