@@ -87,8 +87,8 @@ On top of that, the app supports **persistent undo/redo** by saving a full snaps
 ├── priorityqueue.py    # Custom min-heap priority queue
 ├── VersionManager.py   # Undo/redo system with version snapshots
 ├── README.md           # You're reading it!
-├── .gitignore          # Files to ignore when pushing to GitHub
-└── requirements.txt    # (Optional) pygame dependency
+├── .gitignore          
+└── requirements.txt   
 ```
 
 ---
